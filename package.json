@@ -1,0 +1,40 @@
+{
+  "name": "order_service",
+  "version": "0.1.0",
+  "description": "Ecommerce project order service",
+  "main": "index.js",
+  "scripts": {
+    "test": "NODE_ENV=local nodemon --exec babel-node order-api/app.js",
+    "lint": "eslint ./ --cache --ignore-pattern .gitignore",
+    "eslint-fix": "eslint --fix ."
+  },
+  "author": "Gaurav Agrawal/Prashant Goyal",
+  "license": "ISC",
+  "dependencies": {
+    "@apollo/federation": "^0.33.3",
+    "@babel/eslint-parser": "^7.15.8",
+    "@graphql-tools/merge": "^8.2.0",
+    "apollo-log": "^1.1.0",
+    "apollo-server-express": "^3.4.0",
+    "axios": "^0.23.0",
+    "babel-cli": "^6.26.0",
+    "cors": "^2.8.5",
+    "eslint": "^8.0.1",
+    "eslint-config-google": "^0.14.0",
+    "express": "^4.17.1",
+    "graphql": "^15.6.1",
+    "graphql-resolvers": "^0.4.2",
+    "graphql-type-json": "^0.3.2",
+    "jsonwebtoken": "^8.5.1",
+    "massive": "^6.10.2",
+    "merge-graphql-schemas": "^1.7.8",
+    "mongoose": "^6.0.12"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.15.8",
+    "@babel/node": "^7.15.8",
+    "@babel/preset-env": "^7.15.8",
+    "@babel/register": "^7.15.3",
+    "babel-eslint": "^10.1.0"
+  }
+}

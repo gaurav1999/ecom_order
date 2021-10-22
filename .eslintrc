@@ -1,0 +1,21 @@
+{
+    "env": {
+      "browser": true,
+      "commonjs": true,
+      "es2021": true
+    },
+    "extends": [
+      "google"
+    ],
+    "parser": "@babel/eslint-parser",
+    "rules": {
+      "no-console": "off",
+      "eqeqeq": "off",
+      "curly": "warn",
+      "max-len": ["error", { "code": 200 }],
+      "quotes": [
+        "warn",
+        "single"
+      ]
+    }
+  }
