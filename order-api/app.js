@@ -1,6 +1,10 @@
 'use-strict';
 // TODO: Add logger and config code
 
+const config = require('../properties');
+global.Config = config;
+
+console.log(config);
 import {ApolloServer} from 'apollo-server-express';
 const {buildSubgraphSchema} = require('@apollo/subgraph');
 // const { ApolloLogPlugin } = require('apollo-log');
