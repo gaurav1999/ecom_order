@@ -4,7 +4,7 @@
   "description": "Ecommerce project order service",
   "main": "index.js",
   "scripts": {
-    "test": "NODE_ENV=local nodemon --exec babel-node order-api/app.js",
+    "test": "SET NODE_ENV=local & nodemon --exec babel-node order-api/app.js",
     "lint": "eslint ./ --cache --ignore-pattern .gitignore",
     "eslint-fix": "eslint --fix ."
   },
