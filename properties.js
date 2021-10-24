@@ -1,7 +1,7 @@
 module.exports = {
     postgres: {
-        database: "ecom_orders",
-        password:"postrgres",
+        database: "ecom-orders",
+        password:"postgres",
         host: "localhost",
         user:"postgres",
         port : 5433
@@ -14,6 +14,7 @@ module.exports = {
         port : 3000
     },
     appolo_server : {
-        port: 5000,
+        port: 7700,
+        timeout: 65000
     }
 }
