@@ -1,10 +1,10 @@
 module.exports = {
     postgres: {
-        database: "ecom-orders",
-        password:"postgres",
+        database: "ecom_order",
+        password:"gauravagrawal",
         host: "localhost",
-        user:"postgres",
-        port : 5433
+        user:"gauravagrawal",
+        port : 5432
     },
     mongo: {
 

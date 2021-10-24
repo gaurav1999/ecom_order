@@ -1,19 +1,19 @@
 const massive = require('massive');
 // const _config = require('../../config')
 
-const client = {};
+let client = null;
 
 
-const connect = async ({env}) => {
+const connect = async () => {
     console.log("Connecting Postgres...");
-    client[env] = await massive(global.Config.postgres);
-    return client[env];
+    client = await massive(global.Config.postgres);
+    return client;
 }
 
-const disconnect = async ({env}) => {
+const disconnect = async () => {
     console.log("Disconnecting postgres...");
-    client[env].instance.$pool.end();
-    delete client[env]
+    client.instance.$pool.end();
+    client = null;
     return
 }
 
